@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #031f51;
+  --color-red: #a80022;
+  --color-yellow: #e8db51;
+  --color-paper: #f7f7f7;
+  --color-ink: #454545;
+  --font-sans: var(--font-source), "Source Sans 3", "Source Sans Pro", ui-sans-serif, sans-serif;
+  --font-display: var(--font-roboto), Roboto, ui-sans-serif, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7f7f7;
+  color: #454545;
+  font-family: var(--font-source), "Source Sans 3", "Source Sans Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-roboto), Roboto, sans-serif;
+}
+
+:focus-visible {
+  outline: 3px solid #e8db51;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 80;
+  background: #e8db51;
+  color: #031f51;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
