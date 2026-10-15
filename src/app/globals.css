@@ -2,10 +2,12 @@
 
 @theme inline {
   --color-navy: #031f51;
+  --color-royal: #1560c0;
+  --color-ice: #d7eefc;
   --color-red: #a80022;
   --color-yellow: #e8db51;
-  --color-paper: #f7f7f7;
-  --color-ink: #454545;
+  --color-paper: #f4f8fc;
+  --color-ink: #243044;
   --font-sans: var(--font-source), "Source Sans 3", "Source Sans Pro", ui-sans-serif, sans-serif;
   --font-display: var(--font-roboto), Roboto, ui-sans-serif, sans-serif;
 }
@@ -15,8 +17,8 @@ html {
 }
 
 body {
-  background: #f7f7f7;
-  color: #454545;
+  background: #f4f8fc;
+  color: #243044;
   font-family: var(--font-source), "Source Sans 3", "Source Sans Pro", sans-serif;
 }
 
@@ -28,7 +30,7 @@ h4 {
 }
 
 :focus-visible {
-  outline: 3px solid #e8db51;
+  outline: 3px solid #1560c0;
   outline-offset: 3px;
 }
 
@@ -37,7 +39,7 @@ h4 {
   left: 1rem;
   top: -4rem;
   z-index: 80;
-  background: #e8db51;
+  background: #d7eefc;
   color: #031f51;
   padding: 0.5rem 1rem;
   font-weight: 700;

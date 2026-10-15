@@ -20,14 +20,14 @@ export function AboutPage({ locale }: { locale: Locale }) {
         </div>
       </div>
       <FramedImage
-        src={images.condenser}
+        src={images.truckReal}
         alt={
           locale === "es"
-            ? "Condensador exterior junto a una casa de ladrillo"
-            : "Outdoor condenser beside a brick house"
+            ? "La camioneta real de FrosTex, con el muñeco de nieve vaquero en la puerta"
+            : "The real FrosTex truck, with the cowboy snowman on the door"
         }
-        width={1600}
-        height={900}
+        width={873}
+        height={443}
       />
     </article>
   );

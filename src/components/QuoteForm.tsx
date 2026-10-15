@@ -79,7 +79,7 @@ export function QuoteForm({ locale }: { locale: Locale }) {
           href={telHref}
           event="call_click"
           eventProps={{ location: "quote-success" }}
-          className="mt-6 inline-flex min-h-12 items-center justify-center bg-yellow px-5 py-3 font-display font-bold text-navy"
+          className="mt-6 inline-flex min-h-12 items-center justify-center bg-royal px-5 py-3 font-display font-bold text-white"
         >
           {copy.callNow}
         </TrackedAnchor>
@@ -155,7 +155,7 @@ export function QuoteForm({ locale }: { locale: Locale }) {
         <TurnstileWidget onToken={setToken} />
         <button
           type="submit"
-          className="inline-flex min-h-12 items-center justify-center bg-yellow px-5 py-3 font-display text-base font-bold text-navy hover:brightness-95"
+          className="inline-flex min-h-12 items-center justify-center bg-royal px-5 py-3 font-display text-base font-bold text-white hover:brightness-110"
         >
           {copy.submit}
         </button>

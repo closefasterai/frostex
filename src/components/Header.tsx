@@ -50,7 +50,7 @@ export function HeaderBar({
 
   return (
     <div className="sticky top-0 z-40">
-      <div className="bg-yellow px-4 py-2 text-center text-sm font-bold text-navy md:text-base">
+      <div className="bg-royal px-4 py-2 text-center text-sm font-bold text-white md:text-base">
         {copy.offer}{" "}
         <TrackedAnchor
           href={telHref}
@@ -61,7 +61,7 @@ export function HeaderBar({
           {business.phoneDisplay}
         </TrackedAnchor>
       </div>
-      <header className="bg-navy text-white">
+      <header className="border-b border-navy/10 bg-white text-navy">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3">
           <Link href={homePath(locale)} className="flex items-center gap-3">
             <Image
@@ -77,8 +77,8 @@ export function HeaderBar({
               className="h-14 w-14 bg-white object-contain"
             />
             <span className="hidden leading-tight sm:block">
-              <span className="block font-display text-lg font-bold">FrosTex</span>
-              <span className="block text-xs text-yellow">Air Conditioning & Heating</span>
+              <span className="block font-display text-lg font-bold tracking-wide">FROSTEX</span>
+              <span className="block text-xs font-bold text-royal">air conditioning & heating</span>
             </span>
           </Link>
           <nav className="ml-4 hidden items-center gap-5 md:flex" aria-label={copy.mainNav}>
@@ -88,7 +88,7 @@ export function HeaderBar({
                 href={link.href}
                 aria-current={isActive(pathname, link.href) ? "page" : undefined}
                 className={`font-display text-base font-bold ${
-                  isActive(pathname, link.href) ? "text-yellow" : "text-white"
+                  isActive(pathname, link.href) ? "text-royal" : "text-navy"
                 }`}
               >
                 {link.label}
@@ -96,7 +96,7 @@ export function HeaderBar({
             ))}
             <Link
               href={bookPath(locale)}
-              className="border-2 border-yellow px-3 py-2 font-display text-sm font-bold text-yellow"
+              className="bg-navy px-3 py-2 font-display text-sm font-bold text-white"
             >
               {copy.book}
             </Link>
@@ -105,7 +105,7 @@ export function HeaderBar({
             <Link
               href={localizePath(pathname, other)}
               hrefLang={other}
-              className="hidden font-display text-sm font-bold text-yellow md:inline"
+              className="hidden font-display text-sm font-bold text-royal md:inline"
             >
               {copy.language}
             </Link>
@@ -113,7 +113,7 @@ export function HeaderBar({
               href={telHref}
               event="call_click"
               eventProps={{ location: "header" }}
-              className="bg-yellow px-3 py-2 font-display text-sm font-bold text-navy md:px-4 md:text-base"
+              className="bg-royal px-3 py-2 font-display text-sm font-bold text-white md:px-4 md:text-base"
               ariaLabel={`${copy.call} ${business.phoneDisplay}`}
             >
               <span className="md:hidden">{copy.call}</span>
@@ -121,7 +121,7 @@ export function HeaderBar({
             </TrackedAnchor>
             <button
               type="button"
-              className="border border-white px-3 py-2 font-display text-sm font-bold md:hidden"
+              className="border border-navy px-3 py-2 font-display text-sm font-bold md:hidden"
               aria-expanded={open}
               aria-controls="mobile-menu"
               onClick={() => setOpenPath(open ? null : pathname)}
@@ -152,10 +152,10 @@ export function HeaderBar({
                 {link.label}
               </Link>
             ))}
-            <Link href={bookPath(locale)} className="font-display text-2xl font-bold text-yellow">
+            <Link href={bookPath(locale)} className="font-display text-2xl font-bold text-ice">
               {copy.book}
             </Link>
-            <Link href={localizePath(pathname, other)} hrefLang={other} className="text-lg text-yellow">
+            <Link href={localizePath(pathname, other)} hrefLang={other} className="text-lg text-ice">
               {copy.language}
             </Link>
           </nav>

@@ -36,7 +36,7 @@ export function ServiceView({
         </div>
       </div>
       <aside className="h-fit bg-navy p-5 text-white md:sticky md:top-28 md:col-span-2">
-        <p className="bg-yellow px-3 py-3 font-display text-lg font-bold text-navy">{copy.offer}</p>
+        <p className="bg-ice px-3 py-3 font-display text-lg font-bold text-navy">{copy.offer}</p>
         <p className="mt-4 text-sm">{copy.hours}</p>
         <div className="mt-5">
           <CtaRow

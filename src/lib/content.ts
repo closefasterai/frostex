@@ -3,6 +3,8 @@ export type Locale = (typeof locales)[number];
 
 export const images = {
   logo: "/images/frostex-logo.jpg",
+  truckHero: "/images/truck-hero.jpg",
+  truckReal: "/images/truck-real.jpg",
   roofWork: "/images/pexels-20046694.jpeg",
   miniSplit: "/images/pexels-32497161.jpeg",
   thermostat: "/images/pexels-5463581.jpeg",
@@ -275,10 +277,19 @@ export const ui = {
     menu: "Menu",
     close: "Close",
     allServices: "All services",
-    heroKicker: "Edinburg, Texas",
-    heroTitle: "AC and heating for Edinburg homes and businesses",
-    heroBody:
-      "FrosTex Air Conditioning & Heating LLC repairs systems, keeps them maintained, and installs new ones.",
+    heroKicker: "Proudly serving South Texas",
+    heroTitle: "AC and heat for Edinburg.",
+    heroBody: "Homes and businesses. License TACLB164727E.",
+    heroCall: "Call 956-776-7366",
+    trust: [
+      "License TACLB164727E",
+      "15% off a first repair",
+      "Homes and businesses",
+      "Maintenance year round",
+    ],
+    workTitle: "What we do",
+    truckTitle: "The FrosTex truck",
+    truckBody: "Air conditioning and heating. Proudly serving South Texas.",
     claimsTitle: "What you can count on",
     claims: [
       "The technicians are skilled professionals.",
@@ -369,10 +380,19 @@ export const ui = {
     menu: "Menú",
     close: "Cerrar",
     allServices: "Todos los servicios",
-    heroKicker: "Edinburg, Texas",
-    heroTitle: "Aire acondicionado y calefacción para casas y negocios en Edinburg",
-    heroBody:
-      "FrosTex Air Conditioning & Heating LLC repara sistemas, les da mantenimiento e instala equipos nuevos.",
+    heroKicker: "Con orgullo, el sur de Texas",
+    heroTitle: "Aire y calefacción en Edinburg.",
+    heroBody: "Casas y negocios. Licencia TACLB164727E.",
+    heroCall: "Llamar 956-776-7366",
+    trust: [
+      "Licencia TACLB164727E",
+      "15% en la primera reparación",
+      "Casas y negocios",
+      "Mantenimiento todo el año",
+    ],
+    workTitle: "Qué hacemos",
+    truckTitle: "La camioneta de FrosTex",
+    truckBody: "Aire acondicionado y calefacción. Con orgullo, el sur de Texas.",
     claimsTitle: "En qué puede confiar",
     claims: [
       "Los técnicos son profesionales con experiencia.",

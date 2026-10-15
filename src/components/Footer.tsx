@@ -7,13 +7,13 @@ import { aboutPath, contactPath, homePath, servicesPath } from "@/lib/paths";
 export function Footer({ locale }: { locale: Locale }) {
   const copy = ui[locale];
   return (
-    <footer className="mt-16 border-t-4 border-red bg-navy text-white">
+    <footer className="border-t-4 border-royal bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
         <div>
           <p className="font-display text-xl font-bold">{business.name}</p>
           <p className="mt-3">{addressLine}</p>
           <p className="mt-2">{copy.hours}</p>
-          <p className="mt-4 text-sm font-bold text-yellow">
+          <p className="mt-4 text-sm font-bold text-ice">
             {copy.licenseLabel} {business.license}
           </p>
         </div>
@@ -22,7 +22,7 @@ export function Footer({ locale }: { locale: Locale }) {
             href={telHref}
             event="call_click"
             eventProps={{ location: "footer" }}
-            className="font-display text-lg font-bold text-yellow"
+            className="font-display text-lg font-bold text-ice"
           >
             {business.phoneDisplay}
           </TrackedAnchor>
