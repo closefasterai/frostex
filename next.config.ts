@@ -24,8 +24,6 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_TURNSTILE_SITE_KEY: turnstileSiteKey,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
   images: {
     unoptimized: true,
   },

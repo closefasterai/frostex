@@ -19,6 +19,8 @@ const roboto = Roboto({
   display: "swap",
 });
 
+export const dynamic = "force-static";
+
 export const viewport: Viewport = {
   themeColor: "#031f51",
   width: "device-width",
