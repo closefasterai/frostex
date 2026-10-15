@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { TURNSTILE_SITEKEY } from "@/lib/business";
 
 type TurnstileApi = {
   render: (
@@ -25,6 +24,7 @@ declare global {
 }
 
 const SCRIPT_ID = "cf-turnstile-script";
+const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "";
 
 export function TurnstileWidget({
   onToken,
@@ -40,6 +40,7 @@ export function TurnstileWidget({
   }, [onToken]);
 
   useEffect(() => {
+    if (!SITE_KEY) return;
     let cancelled = false;
 
     function render() {
@@ -47,7 +48,7 @@ export function TurnstileWidget({
         return;
       }
       widgetId.current = window.turnstile.render(holder.current, {
-        sitekey: TURNSTILE_SITEKEY,
+        sitekey: SITE_KEY,
         action: "quote",
         theme: "light",
         callback: (token) => onTokenRef.current(token),
@@ -78,6 +79,10 @@ export function TurnstileWidget({
       }
     };
   }, []);
+
+  if (!SITE_KEY) {
+    return <p className="text-sm text-red">The demo check is not configured.</p>;
+  }
 
   return <div ref={holder} className="min-h-[65px]" />;
 }

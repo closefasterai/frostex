@@ -19,7 +19,4 @@ export const telHref = `tel:${business.phoneTel}`;
 export const smsHref = `sms:${business.phoneTel}`;
 export const mailHref = `mailto:${business.email}`;
 
-/** Public Cloudflare Turnstile dummy sitekey. Always passes. Not a secret. */
-export const TURNSTILE_SITEKEY = "1x00000000000000000000AA";
-
 export const PLAUSIBLE_DOMAIN = "frostex-demo-preview.workers.dev";
